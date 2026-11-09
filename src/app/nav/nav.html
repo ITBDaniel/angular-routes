@@ -1,7 +1,14 @@
 <nav class="w-full h-full">
   <ul class="flex text-2xl gap-12 items-center text-amber-600 w-full h-full">
-    <li><a href="/">Inicio</a></li>
+    <li><a routerLink="/"
+      routerLinkActive=""
+      [routerLinkActiveOptions]="{ exact: true}">
+      Inicio</a></li>
     <li><a href="#QueEs">¿Que es?</a></li>
     <li><a href="#Stats">Estadisticas</a></li>
+    <a routerLink="equipos"
+      routerLinkActive="">
+      Equipos
+    </a>
   </ul>
 </nav>
